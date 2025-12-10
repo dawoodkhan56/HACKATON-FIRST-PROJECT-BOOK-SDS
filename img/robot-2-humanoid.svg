@@ -1,12 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
-  <!-- Second Robot: Humanoid Robot -->
-  <rect x="30" y="25" width="40" height="50" rx="20" fill="#8e44ad" />
-  <circle cx="50" cy="15" r="15" fill="#9b59b6" />
-  <circle cx="45" cy="12" r="2" fill="white" />
-  <circle cx="55" cy="12" r="2" fill="white" />
-  <path d="M45 22 Q50 25 55 22" stroke="white" stroke-width="1" fill="none" />
-  <line x1="30" y1="35" x2="15" y2="50" stroke="#8e44ad" stroke-width="5" />
-  <line x1="70" y1="35" x2="85" y2="50" stroke="#8e44ad" stroke-width="5" />
-  <line x1="40" y1="75" x2="40" y2="110" stroke="#8e44ad" stroke-width="6" />
-  <line x1="60" y1="75" x2="60" y2="110" stroke="#8e44ad" stroke-width="6" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="humanoidGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e6e6fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c5c5e9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Head -->
+  <circle cx="50" cy="25" r="15" fill="url(#humanoidGradient)" stroke="#a0a0c0" stroke-width="1"/>
+  <!-- Body -->
+  <rect x="40" y="40" width="20" height="30" rx="5" fill="url(#humanoidGradient)" stroke="#a0a0c0" stroke-width="1"/>
+  <!-- Arms -->
+  <line x1="40" y1="45" x2="25" y2="60" stroke="#c5c5e9" stroke-width="3" stroke-linecap="round"/>
+  <line x1="60" y1="45" x2="75" y2="60" stroke="#c5c5e9" stroke-width="3" stroke-linecap="round"/>
+  <!-- Legs -->
+  <line x1="45" y1="70" x2="45" y2="85" stroke="#a0a0c0" stroke-width="3" stroke-linecap="round"/>
+  <line x1="55" y1="70" x2="55" y2="85" stroke="#a0a0c0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Eyes -->
+  <circle cx="45" cy="22" r="2" fill="#000080"/>
+  <circle cx="55" cy="22" r="2" fill="#000080"/>
+  <!-- Mouth -->
+  <path d="M45 30 Q50 35 55 30" stroke="#800000" stroke-width="1" fill="none"/>
 </svg>

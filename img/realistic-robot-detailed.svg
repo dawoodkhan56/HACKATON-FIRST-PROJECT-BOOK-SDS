@@ -1,73 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Robot Shadow -->
-  <ellipse cx="100" cy="280" rx="40" ry="8" fill="rgba(0,0,0,0.2)" />
-
-  <!-- Robot Body -->
-  <rect x="75" y="70" width="50" height="100" rx="10" fill="#3a3a3a" />
-  <rect x="75" y="70" width="50" height="100" rx="10" fill="url(#bodyGradient)" />
-  
-  <!-- Body details -->
-  <rect x="85" y="90" width="30" height="15" rx="7" fill="#555" />
-  <rect x="85" y="110" width="30" height="30" rx="5" fill="#444" />
-  <line x1="85" y1="125" x2="115" y2="125" stroke="#666" stroke-width="1" />
-  <line x1="85" y1="140" x2="115" y2="140" stroke="#666" stroke-width="1" />
-  
-  <!-- Chest panel -->
-  <rect x="80" y="150" width="40" height="20" rx="10" fill="#2980b9" />
-  <circle cx="100" cy="160" r="7" fill="#2c3e50" />
-  <circle cx="100" cy="160" r="4" fill="#3498db" />
-  
-  <!-- Head -->
-  <rect x="85" y="40" width="30" height="30" rx="15" fill="#d0d0d0" />
-  <rect x="85" y="40" width="30" height="30" rx="15" fill="url(#headGradient)" />
-  
-  <!-- Face details -->
-  <circle cx="95" cy="55" r="4" fill="#2c3e50" />
-  <circle cx="105" cy="55" r="4" fill="#2c3e50" />
-  <path d="M 92 65 Q 100 70 108 65" stroke="#2c3e50" stroke-width="1.5" fill="none" />
-  
-  <!-- Eyes - glowing -->
-  <circle cx="95" cy="55" r="2" fill="#27ae60" />
-  <circle cx="105" cy="55" r="2" fill="#27ae60" />
-  
-  <!-- Neck -->
-  <rect x="95" y="70" width="10" height="10" fill="#aaa" />
-  
-  <!-- Arms -->
-  <line x1="75" y1="85" x2="40" y2="110" stroke="#3a3a3a" stroke-width="10" stroke-linecap="round" />
-  <line x1="125" y1="85" x2="160" y2="110" stroke="#3a3a3a" stroke-width="10" stroke-linecap="round" />
-  <circle cx="40" cy="110" r="8" fill="#3a3a3a" />
-  <circle cx="160" cy="110" r="8" fill="#3a3a3a" />
-  
-  <!-- Hands -->
-  <rect x="30" y="105" width="20" height="10" rx="5" fill="#444" />
-  <rect x="150" y="105" width="20" height="10" rx="5" fill="#444" />
-  
-  <!-- Legs -->
-  <rect x="85" y="170" width="12" height="55" rx="6" fill="#3a3a3a" />
-  <rect x="103" y="170" width="12" height="55" rx="6" fill="#3a3a3a" />
-  
-  <!-- Feet -->
-  <rect x="80" y="225" width="22" height="10" rx="5" fill="#2c3e50" />
-  <rect x="103" y="225" width="22" height="10" rx="5" fill="#2c3e50" />
-  
-  <!-- Antenna -->
-  <line x1="100" y1="40" x2="100" y2="20" stroke="#7f8c8d" stroke-width="2" />
-  <circle cx="100" cy="18" r="3" fill="#e74c3c" />
-  
-  <!-- Decorative elements -->
-  <circle cx="100" cy="100" r="3" fill="#e74c3c" />
-  <rect x="90" y="105" width="20" height="3" fill="#f1c40f" />
-  
-  <!-- Gradients definition -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#555" />
-      <stop offset="100%" stop-color="#3a3a3a" />
+    <linearGradient id="detailedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a7bd5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00d2ff;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="headGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#eee" />
-      <stop offset="100%" stop-color="#d0d0d0" />
-    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
   </defs>
+  <g filter="url(#shadow)">
+    <!-- Body -->
+    <rect x="40" y="45" width="20" height="40" rx="5" fill="url(#detailedGradient)" stroke="#1a5ca3" stroke-width="1"/>
+    <!-- Head -->
+    <circle cx="50" cy="35" r="15" fill="url(#detailedGradient)" stroke="#1a5ca3" stroke-width="1"/>
+    <!-- Arms -->
+    <line x1="40" y1="55" x2="25" y2="65" stroke="#3a7bd5" stroke-width="3" stroke-linecap="round"/>
+    <line x1="60" y1="55" x2="75" y2="65" stroke="#3a7bd5" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="44" y1="85" x2="44" y2="95" stroke="#00a2cc" stroke-width="3" stroke-linecap="round"/>
+    <line x1="56" y1="85" x2="56" y2="95" stroke="#00a2cc" stroke-width="3" stroke-linecap="round"/>
+    <!-- Face details -->
+    <circle cx="45" cy="32" r="2" fill="#ffffff"/>
+    <circle cx="55" cy="32" r="2" fill="#ffffff"/>
+    <circle cx="45" cy="32" r="1" fill="#000080"/>
+    <circle cx="55" cy="32" r="1" fill="#000080"/>
+    <path d="M45 40 Q50 43 55 40" stroke="#ffffff" stroke-width="1" fill="none"/>
+    <!-- Chest display -->
+    <rect x="43" y="55" width="14" height="10" rx="2" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="50" cy="60" r="1" fill="#00ff00"/>
+  </g>
 </svg>
