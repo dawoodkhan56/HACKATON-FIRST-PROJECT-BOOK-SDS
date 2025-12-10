@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 150">
+  <!-- Second Robot: Humanoid Robot -->
+  <rect x="30" y="25" width="40" height="50" rx="20" fill="#8e44ad" />
+  <circle cx="50" cy="15" r="15" fill="#9b59b6" />
+  <circle cx="45" cy="12" r="2" fill="white" />
+  <circle cx="55" cy="12" r="2" fill="white" />
+  <path d="M45 22 Q50 25 55 22" stroke="white" stroke-width="1" fill="none" />
+  <line x1="30" y1="35" x2="15" y2="50" stroke="#8e44ad" stroke-width="5" />
+  <line x1="70" y1="35" x2="85" y2="50" stroke="#8e44ad" stroke-width="5" />
+  <line x1="40" y1="75" x2="40" y2="110" stroke="#8e44ad" stroke-width="6" />
+  <line x1="60" y1="75" x2="60" y2="110" stroke="#8e44ad" stroke-width="6" />
+</svg>

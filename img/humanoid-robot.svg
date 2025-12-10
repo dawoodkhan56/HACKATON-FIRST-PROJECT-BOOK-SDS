@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Robot Head -->
+  <circle cx="100" cy="50" r="25" fill="#5a7db5" />
+  
+  <!-- Robot Eyes -->
+  <circle cx="90" cy="45" r="5" fill="white" />
+  <circle cx="110" cy="45" r="5" fill="white" />
+  <circle cx="90" cy="45" r="2" fill="black" />
+  <circle cx="110" cy="45" r="2" fill="black" />
+  
+  <!-- Robot Antenna -->
+  <line x1="100" y1="25" x2="100" y2="10" stroke="#ff6b6b" stroke-width="2" />
+  <circle cx="100" cy="8" r="2" fill="#ff6b6b" />
+  
+  <!-- Robot Neck -->
+  <rect x="95" y="75" width="10" height="10" fill="#4d72aa" />
+  
+  <!-- Robot Body -->
+  <rect x="70" y="85" width="60" height="80" rx="20" fill="#4d72aa" />
+  
+  <!-- Robot Chest Panel -->
+  <rect x="85" y="100" width="30" height="30" rx="5" fill="#3a5a8a" />
+  <circle cx="100" cy="115" r="5" fill="#ff6b6b" />
+  
+  <!-- Robot Arms -->
+  <line x1="70" y1="95" x2="30" y2="120" stroke="#3a5a8a" stroke-width="10" stroke-linecap="round" />
+  <line x1="70" y1="120" x2="35" y2="150" stroke="#3a5a8a" stroke-width="8" stroke-linecap="round" />
+  <line x1="130" y1="95" x2="170" y2="120" stroke="3a5a8a" stroke-width="10" stroke-linecap="round" />
+  <line x1="130" y1="120" x2="165" y2="150" stroke="#3a5a8a" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Robot Waist -->
+  <rect x="75" y="165" width="50" height="10" fill="#3a5a8a" />
+  
+  <!-- Robot Legs -->
+  <line x1="90" y1="175" x2="90" y2="240" stroke="#3a5a8a" stroke-width="12" stroke-linecap="round" />
+  <line x1="110" y1="175" x2="110" y2="240" stroke="#3a5a8a" stroke-width="12" stroke-linecap="round" />
+  <line x1="80" y1="240" x2="100" y2="245" stroke="#2a4a7a" stroke-width="10" stroke-linecap="round" />
+  <line x1="100" y1="245" x2="120" y2="240" stroke="#2a4a7a" stroke-width="10" stroke-linecap="round" />
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="140" r="3" fill="#ff6b6b" />
+  <circle cx="85" cy="135" r="2" fill="#ffdd40" />
+  <circle cx="115" cy="135" r="2" fill="#ffdd40" />
+</svg>
